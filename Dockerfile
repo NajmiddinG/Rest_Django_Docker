@@ -13,7 +13,7 @@ ARG DEV=false
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
     /py/bin/pip install -r /tmp/requirements.txt && \
-    /py/bin/pip install -r /tmp/requirements.dev.txt ; &&\
+    /py/bin/pip install -r /tmp/requirements.dev.txt &&\
     rm -rf /tmp && \
     adduser \
         --disabled-password \
